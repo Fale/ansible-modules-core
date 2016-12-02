@@ -104,10 +104,8 @@ EXAMPLES = '''
     dest: '{{ item.dest }}'
     state: link
   with_items:
-    - src: x
-      dest: y
-    - src: z
-      dest: k
+    - { src: 'x', dest: 'y' }
+    - { src: 'z', dest: 'k' }
 
 # touch a file, using symbolic modes to set the permissions (equivalent to 0644)
 - file:

@@ -89,18 +89,18 @@ EXAMPLES = '''
 
 # Add an Apt signing key, uses whichever key is at the URL
 - apt_key:
-    url: "https://ftp-master.debian.org/keys/archive-key-6.0.asc"
+    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
     state: present
 
 # Add an Apt signing key, will not download if present
 - apt_key:
     id: 473041FA
-    url: "https://ftp-master.debian.org/keys/archive-key-6.0.asc"
+    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
     state: present
 
 # Remove an Apt signing key, uses whichever key is at the URL
 - apt_key:
-    url: "https://ftp-master.debian.org/keys/archive-key-6.0.asc"
+    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
     state: absent
 
 # Remove a Apt specific signing key, leading 0x is valid
@@ -116,7 +116,7 @@ EXAMPLES = '''
 # Add an Apt signing key to a specific keyring file
 - apt_key:
     id: 473041FA
-    url: "https://ftp-master.debian.org/keys/archive-key-6.0.asc"
+    url: https://ftp-master.debian.org/keys/archive-key-6.0.asc
     keyring: /etc/apt/trusted.gpg.d/debian.gpg
 
 # Add Apt signing key on remote server to keyring

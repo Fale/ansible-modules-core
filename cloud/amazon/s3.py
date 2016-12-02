@@ -168,7 +168,7 @@ EXAMPLES = '''
     src: /usr/local/myfile.txt
     mode: put
     rgw: true
-    s3_url: "http://localhost:8000"
+    s3_url: http://localhost:8000
 
 - name: Simple GET operation
   s3:

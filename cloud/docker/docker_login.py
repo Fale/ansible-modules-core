@@ -37,7 +37,7 @@ options:
     required: False
     description:
       - The registry URL.
-    default: "https://index.docker.io/v1/"
+    default: https://index.docker.io/v1/
     aliases:
       - registry
       - url

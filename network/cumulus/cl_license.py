@@ -84,11 +84,10 @@ EXAMPLES = '''
       name: networking
       state: reloaded
 
-# Force all switches to accept a new license. Typically not needed
-ansible -m cl_license -a "src='http://10.1.1.1/new_lic' force=yes" -u root all
-
-----
-
+# Force switches to accept a new license. Typically not needed
+- cl_license:
+    src: http://10.1.1.1/new_lic
+    force: yes
 '''
 
 RETURN = '''

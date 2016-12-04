@@ -156,7 +156,7 @@ EXAMPLES = '''
 - local_action:
     module: gce_net
     name: privatenet
-    ipv4_range: '10.240.16.0/24'
+    ipv4_range: 10.240.16.0/24
 
 # Simple example of creating a new firewall rule
 - local_action:
@@ -164,7 +164,9 @@ EXAMPLES = '''
     name: privatenet
     fwname: all-web-webproxy
     allowed: tcp:80,8080
-    src_tags: ["web", "proxy"]
+    src_tags:
+      - web
+      - proxy
 
 # Simple example of creating a new auto network
 - local_action:
@@ -180,7 +182,6 @@ EXAMPLES = '''
     subnet_name: subnet_example
     subnet_region: us-central1
     ipv4_range: 10.0.0.0/16
-
 '''
 
 try:

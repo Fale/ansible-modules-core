@@ -77,7 +77,7 @@ EXAMPLES = """
 - htpasswd:
     path: /etc/nginx/passwdfile
     name: janedoe
-    password: '9s36?;fyNp'
+    password: 9s36?;fyNp
     owner: root
     group: www-data
     mode: 0640

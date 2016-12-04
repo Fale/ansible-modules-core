@@ -178,7 +178,7 @@ EXAMPLES = '''
 
 - name: upgrade all packages
   yum:
-    name: '*'
+    name: *
     state: latest
 
 - name: install the nginx rpm from a remote repo
@@ -193,12 +193,12 @@ EXAMPLES = '''
 
 - name: install the 'Development tools' package group
   yum:
-    name: "@Development tools"
+    name: @Development tools
     state: present
 
 - name: install the 'Gnome desktop' environment group
   yum:
-    name: "@^gnome-desktop-environment"
+    name: @^gnome-desktop-environment
     state: present
 '''
 

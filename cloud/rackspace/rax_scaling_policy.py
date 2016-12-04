@@ -86,7 +86,7 @@ EXAMPLES = '''
     - rax_scaling_policy:
         credentials: ~/.raxpub
         region: ORD
-        at: '2013-05-19T08:07:08Z'
+        at: 2013-05-19T08:07:08Z
         change: 25
         cooldown: 300
         is_percent: true
@@ -98,7 +98,7 @@ EXAMPLES = '''
     - rax_scaling_policy:
         credentials: ~/.raxpub
         region: ORD
-        cron: '1 0 * * *'
+        cron: 1 0 * * *
         change: 25
         cooldown: 300
         is_percent: true

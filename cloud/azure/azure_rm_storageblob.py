@@ -153,7 +153,7 @@ EXAMPLES = '''
     blob: graylog.png
     src: ./files/graylog.png
     public_access: container
-    content_type: 'application/image'
+    content_type: application/image
 
 - name: Download the file
   azure_rm_storageblob:

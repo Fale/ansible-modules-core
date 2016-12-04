@@ -92,7 +92,7 @@ EXAMPLES = '''
 - apt_repository:
     repo: deb http://dl.google.com/linux/chrome/deb/ stable main
     state: present
-    filename: 'google-chrome'
+    filename: google-chrome
 
 # Add source repository into sources list.
 - apt_repository:
@@ -107,13 +107,13 @@ EXAMPLES = '''
 # Add nginx stable repository from PPA and install its signing key.
 # On Ubuntu target:
 - apt_repository:
-    repo: 'ppa:nginx/stable'
+    repo: ppa:nginx/stable
 
 # On Debian target
 - apt_repository:
-    repo: 'ppa:nginx/stable'
-    codename: 'trusty'
-    repo: 'ppa:nginx/stable'
+    repo: ppa:nginx/stable
+    codename: trusty
+    repo: ppa:nginx/stable
 '''
 
 import glob

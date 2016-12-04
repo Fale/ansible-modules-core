@@ -88,7 +88,7 @@ EXAMPLES = '''
 - name Ensure an interface is a Layer 3 port and that it has the proper description
   nxos_interface:
     interface: Ethernet1/1
-    description: 'Configured by Ansible'
+    description: Configured by Ansible
     mode: layer3
     host: 68.170.147.165
 
@@ -106,15 +106,15 @@ EXAMPLES = '''
 
 - name Remove all logical interfaces
   nxos_interface:
-    interface_type: "{{ item }} "
+    interface_type: '{{ item }}'
     state: absent
-    host: "{{ inventory_hostname }}"
-
+    host: '{{ inventory_hostname }}'
   with_items:
     - loopback
     - portchannel
     - svi
     - nve
+
 - name Admin up all ethernet interfaces
   nxos_interface:
     interface: ethernet

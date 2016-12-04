@@ -83,13 +83,13 @@ options:
 EXAMPLES = """
 - name: create a VLAN
   pn_vlan:
-    state: 'present'
+    state: present
     pn_vlanid: 1854
     pn_scope: fabric
 
 - name: delete VLANs
   pn_vlan:
-    state: 'absent'
+    state: absent
     pn_vlanid: 1854
 """
 

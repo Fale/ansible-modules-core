@@ -129,15 +129,15 @@ options:
 EXAMPLES = """
 - name: add vrouter-bgp
   pn_vrouterbgp:
-    state: 'present'
-    pn_vrouter_name: 'ansible-vrouter'
+    state: present
+    pn_vrouter_name: ansible-vrouter
     pn_neighbor: 104.104.104.1
     pn_remote_as: 1800
 
 - name: remove vrouter-bgp
   pn_vrouterbgp:
-    state: 'absent'
-    pn_name: 'ansible-vrouter'
+    state: absent
+    pn_name: ansible-vrouter
 """
 
 RETURN = """

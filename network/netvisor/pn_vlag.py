@@ -100,16 +100,16 @@ options:
 EXAMPLES = """
 - name: create a VLAG
   pn_vlag:
-    state: 'present'
+    state: present
     pn_name: spine-to-leaf
-    pn_port: 'spine01-to-leaf'
-    pn_peer_port: 'spine02-to-leaf'
+    pn_port: spine01-to-leaf
+    pn_peer_port: spine02-to-leaf
     pn_peer_switch: spine02
-    pn_mode: 'active-active'
+    pn_mode: active-active
 
 - name: delete VLAGs
   pn_vlag:
-    state: 'absent'
+    state: absent
     pn_name: spine-to-leaf
 """
 

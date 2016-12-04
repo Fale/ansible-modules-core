@@ -69,17 +69,17 @@ extends_documentation_fragment:
 EXAMPLES = '''
 # Add or change a parameter group, in this case setting auto_increment_increment to 42 * 1024
 - rds_param_group:
-      state: present
-      name: norwegian_blue
-      description: 'My Fancy Ex Parrot Group'
-      engine: 'mysql5.6'
-      params:
-          auto_increment_increment: "42K"
+    state: present
+    name: norwegian_blue
+    description: My Fancy Ex Parrot Group
+    engine: mysql5.6
+    params:
+      auto_increment_increment: 42K
 
 # Remove a parameter group
 - rds_param_group:
-      state: absent
-      name: norwegian_blue
+    state: absent
+    name: norwegian_blue
 '''
 
 VALID_ENGINES = [

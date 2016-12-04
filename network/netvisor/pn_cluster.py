@@ -76,17 +76,17 @@ options:
 EXAMPLES = """
 - name: create spine cluster
   pn_cluster:
-    state: 'present'
-    pn_name: 'spine-cluster'
-    pn_cluster_node1: 'spine01'
-    pn_cluster_node2: 'spine02'
+    state: present
+    pn_name: spine-cluster
+    pn_cluster_node1: spine01
+    pn_cluster_node2: spine02
     pn_validate: validate
     pn_quiet: True
 
 - name: delete spine cluster
   pn_cluster:
-    state: 'absent'
-    pn_name: 'spine-cluster'
+    state: absent
+    pn_name: spine-cluster
     pn_quiet: True
 """
 

@@ -114,8 +114,8 @@ EXAMPLES = """
   pn_vrouterif:
     pn_cliusername: admin
     pn_clipassword: admin
-    state: 'present'
-    pn_vrouter_name: 'ansible-vrouter'
+    state: present
+    pn_vrouter_name: ansible-vrouter
     pn_interface_ip: 101.101.101.2/24
     pn_vlan: 101
 
@@ -123,8 +123,8 @@ EXAMPLES = """
   pn_vrouterif:
     pn_cliusername: admin
     pn_clipassword: admin
-    state: 'present'
-    pn_vrouter_name: 'ansible-vrouter'
+    state: present
+    pn_vrouter_name: ansible-vrouter
     pn_interface_ip: 101.101.101.2/24
     pn_vrrp_ip: 101.101.101.1/24
     pn_vrrp_priority: 100
@@ -134,8 +134,8 @@ EXAMPLES = """
   pn_vrouterif:
     pn_cliusername: admin
     pn_clipassword: admin
-    state: 'absent'
-    pn_vrouter_name: 'ansible-vrouter'
+    state: absent
+    pn_vrouter_name: ansible-vrouter
     pn_interface_ip: 101.101.101.2/24
 """
 

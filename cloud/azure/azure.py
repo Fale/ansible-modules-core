@@ -148,7 +148,7 @@ EXAMPLES = '''
     name: my-virtual-machine
     role_size: Small
     image: b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-precise-12_04_3-LTS-amd64-server-20131205-en-us-30GB
-    location: 'East US'
+    location: East US
     user: ubuntu
     ssh_cert_path: /path/to/azure_x509_cert.pem
     storage_account: my-storage-account
@@ -166,22 +166,20 @@ EXAMPLES = '''
   tasks:
    - local_action:
       module: azure
-      name: "ben-Winows-23"
-      hostname: "win123"
+      name: ben-Winows-23
+      hostname: win123
       os_type: windows
       enable_winrm: yes
-      subscription_id: "{{ azure_sub_id }}"
-      management_cert_path: "{{ azure_cert_path }}"
+      subscription_id: '{{ azure_sub_id }}'
+      management_cert_path: '{{ azure_cert_path }}'
       role_size: Small
-      image: 'bd507d3a70934695bc2128e3e5a255ba__RightImage-Windows-2012-x64-v13.5'
-      location: 'East Asia'
-      password: "xxx"
+      image: bd507d3a70934695bc2128e3e5a255ba__RightImage-Windows-2012-x64-v13.5
+      location: East Asia
+      password: xxx
       storage_account: benooytes
       user: admin
       wait: yes
-      virtual_network_name: "{{ vnet_name }}"
-
-
+      virtual_network_name: '{{ vnet_name }}'
 '''
 
 import base64

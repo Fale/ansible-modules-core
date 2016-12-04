@@ -100,58 +100,58 @@ notes:
 EXAMPLES = '''
 # Create a server
 - local_action:
-     module: linode
-     api_key: 'longStringFromLinodeApi'
-     name: linode-test1
-     plan: 1
-     datacenter: 2
-     distribution: 99
-     password: 'superSecureRootPassword'
-     ssh_pub_key: 'ssh-rsa qwerty'
-     swap: 768
-     wait: yes
-     wait_timeout: 600
-     state: present
+    module: linode
+    api_key: longStringFromLinodeApi
+    name: linode-test1
+    plan: 1
+    datacenter: 2
+    distribution: 99
+    password: superSecureRootPassword
+    ssh_pub_key: ssh-rsa qwerty
+    swap: 768
+    wait: yes
+    wait_timeout: 600
+    state: present
 
 # Ensure a running server (create if missing)
 - local_action:
-     module: linode
-     api_key: 'longStringFromLinodeApi'
-     name: linode-test1
-     linode_id: 12345678
-     plan: 1
-     datacenter: 2
-     distribution: 99
-     password: 'superSecureRootPassword'
-     ssh_pub_key: 'ssh-rsa qwerty'
-     swap: 768
-     wait: yes
-     wait_timeout: 600
-     state: present
+    module: linode
+    api_key: longStringFromLinodeApi
+    name: linode-test1
+    linode_id: 12345678
+    plan: 1
+    datacenter: 2
+    distribution: 99
+    password: superSecureRootPassword
+    ssh_pub_key: ssh-rsa qwerty
+    swap: 768
+    wait: yes
+    wait_timeout: 600
+    state: present
 
 # Delete a server
 - local_action:
-     module: linode
-     api_key: 'longStringFromLinodeApi'
-     name: linode-test1
-     linode_id: 12345678
-     state: absent
+    module: linode
+    api_key: longStringFromLinodeApi
+    name: linode-test1
+    linode_id: 12345678
+    state: absent
 
 # Stop a server
 - local_action:
-     module: linode
-     api_key: 'longStringFromLinodeApi'
-     name: linode-test1
-     linode_id: 12345678
-     state: stopped
+    module: linode
+    api_key: longStringFromLinodeApi
+    name: linode-test1
+    linode_id: 12345678
+    state: stopped
 
 # Reboot a server
 - local_action:
-     module: linode
-     api_key: 'longStringFromLinodeApi'
-     name: linode-test1
-     linode_id: 12345678
-     state: restarted
+    module: linode
+    api_key: longStringFromLinodeApi
+    name: linode-test1
+    linode_id: 12345678
+    state: restarted
 '''
 
 import time

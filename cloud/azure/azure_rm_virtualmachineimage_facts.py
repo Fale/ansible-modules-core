@@ -77,7 +77,7 @@ EXAMPLES = '''
     location: eastus
     publisher: OpenLogic
     offer: CentOS
-    sku: 7.1
+    sku: '7.1'
     version: 7.1.20160308
 
 - name: List available versions
@@ -85,7 +85,7 @@ EXAMPLES = '''
     location: eastus
     publisher: OpenLogic
     offer: CentOS
-    sku: 7.1
+    sku: '7.1'
 
 - name: List available offers
   azure_rm_virtualmachineimage_facts:

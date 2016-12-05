@@ -230,7 +230,7 @@ EXAMPLES = '''
     image:
       offer: CentOS
       publisher: OpenLogic
-      sku: 7.1
+      sku: '7.1'
       version: latest
 
 - name: Create a VM with exiting storage account and NIC
@@ -247,7 +247,7 @@ EXAMPLES = '''
     image:
       offer: CentOS
       publisher: OpenLogic
-      sku: 7.1
+      sku: '7.1'
       version: latest
 
 - name: Power Off
